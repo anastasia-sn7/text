@@ -2,7 +2,7 @@ class Main
   def self.main
     puts "Enter the text:"
     text = gets.chomp.downcase
-    words = text.scan(/[a-zA-Z0-9]+/)
+    words = text.gsub(/[a-zA-Z0-9]+/)
 
     word_count = {}
     words.each do |word|
